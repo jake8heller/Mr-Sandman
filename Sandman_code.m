@@ -461,13 +461,14 @@ songD = [songD dm17t20 dm21t24 dm25t28 dm29tEnd];
 song = [0.5.*intro songA dintro songD];
 s = slideNote(fCs, fAs, 1, 1, Clarinet);
 song = song ./ max(abs(song));
+
+%uncomment this command to play the song when matlab is run
+
 %soundsc(song);
 
-B = note(6, fA, Clarinet2, 0, 0);
-figure(1);clf;
-plot(timeVector(6), B);
-axis([0.4,0.4+(1/fA),-1,1]);
-% filename = 'Heller_Sandman.wav';
+%uncomment these lines to write the song vector into a .wav file with name 'Mr-Sandman.wav'
+
+% filename = 'Mr-Sandman.wav';
 % audiowrite(filename, song, fs);
 % clear y fs;
 
