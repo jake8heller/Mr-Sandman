@@ -8,4 +8,4 @@ MrSandman.wav is the audio file which is outputted when running Sandman_code.m i
 
 To listen to the song in Matlab, open Sandman_code.m in Matlab, uncomment line 467, and press run.
 
-To listen to the song as a separate .wav file, uncomment lines 
+To listen to the song as a separate .wav file, uncomment lines 471 and 472, and run the code in Matlab. This will generate the output file.
